@@ -337,7 +337,7 @@ word_counts_sums <- rbind(word_counts_sums, word_counts_sums_total)
 kable(word_counts_sums,
       caption = paste0("Reproducible research-related keywords in the corpus,",
                        " ordered by sum of matches per paper"),
-      format = "latex", booktabs = TRUE) %>%
+      format = "html", booktabs = TRUE) %>%
   kableExtra::landscape()
 ```
 
@@ -454,7 +454,7 @@ options(knitr.kable.NA = '-')
 kable(paper_evaluation_raw %>% 
         select(-matches("reviewer")) %>%
         mutate(`short paper` = if_else(`short paper` == TRUE, "X", "")),
-      format = "latex", booktabs = TRUE,
+      format = "html", booktabs = TRUE,
       caption = paste0("Reproducibility levels for paper corpus; ",
                        "'-' is category not available")) %>%
   kable_styling(latex_options = "scale_down")
