@@ -159,7 +159,7 @@ The **plots and tables** of survey data and evaluation use the packages [`ggplot
 
 \newpage
 
-## Reproduce paper
+## Reproduce paper 
 
 _If you do not have the original data or do not download the data, you cannot reproduce the text analysis part of the paper, i.e. wordcloud and terms frequency analysis._ **You can still reproduce the other figures**.
 
